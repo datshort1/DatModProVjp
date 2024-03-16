@@ -4,7 +4,7 @@ local PhantomForcesWindow = Library:NewWindow("Đạt Mod Pro Vjp")
 
 local Bladeball = PhantomForcesWindow:NewSection("Subcribe YT @datmodd")
 
-Bladeball:CreateToggle("Auto Parry", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry",true))()
+Bladeball:CreateToggle("Auto Parry God", function()loadstring(game:HttpGet(('https://scriptblox.com/raw/Blade-Ball-Opensource-autoparry-8123'),true))()
 end)
 
 Bladeball:CreateToggle("Auto Spam", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Code4Zaaa/X7Project/main/Game/AutoParryOnly"))()
