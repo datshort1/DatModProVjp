@@ -4,7 +4,7 @@ local PhantomForcesWindow = Library:NewWindow("Đạt Mod Premium✨")
 
 local Bladeball = PhantomForcesWindow:NewSection("Subcribe YT @datmodd")
 
-Bladeball:CreateToggle("Auto Parry God", function()loadstring(game:HttpGet(('https://pastefy.app/HXcnPsf3/raw'),true))()
+Bladeball:CreateToggle("Auto Parry God", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/GearV4/Circle-Parry/main/Circle%20parry'),true))()
 end)
 
 Bladeball:CreateToggle("Auto Spam", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Code4Zaaa/X7Project/main/Game/AutoParryOnly"))()
