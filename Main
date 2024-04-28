@@ -1,6 +1,6 @@
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
-local PhantomForcesWindow = Library:NewWindow("Đạt Mod Premium✨")
+local PhantomForcesWindow = Library:NewWindow("Đạt Mod Premium✨V2")
 
 local Bladeball = PhantomForcesWindow:NewSection("Subcribe YT @datmodd")
 
