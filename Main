@@ -4,7 +4,7 @@ local PhantomForcesWindow = Library:NewWindow("Đạt Mod Premium✨V2")
 
 local Bladeball = PhantomForcesWindow:NewSection("Subcribe YT @datmodd")
 
-Bladeball:CreateToggle("Auto Parry God", function()loadstring(game:HttpGet(("https://raw.githubusercontent.com/UltraStuff/scripts2/main/bladered")))()
+Bladeball:CreateToggle("Auto Parry God", function()loadstring(game:HttpGet(("https://raw.githubusercontent.com/datshort1/AutoParry/main/main")))()
 end)
 
 Bladeball:CreateToggle("Auto Spam", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Code4Zaaa/X7Project/main/Game/AutoParryOnly"))()
