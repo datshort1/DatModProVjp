@@ -25,7 +25,7 @@ function resolve_parry_Remote()
 end
 
 
-Bladeball:CreateToggle("Auto Parry V4", function resolve_parry_Remote())
+Bladeball:CreateToggle("Auto Parry V4", function resolve_parry_Remote()
 end)
 
 Bladeball:CreateToggle("Auto Spam", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Code4Zaaa/X7Project/main/Game/AutoParryOnly"))()
