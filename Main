@@ -6,6 +6,7 @@ local Bladeball = PhantomForcesWindow:NewSection("Subcribe YT @datmodd")
 
 
 
+
 --// Thanks Me for this.
 function resolve_parry_Remote()
     for _, value in Services do
@@ -23,50 +24,6 @@ function resolve_parry_Remote()
     end
 end
 
-local aura_table = {
-    canParry = true,
-    is_Spamming = false,
-
-    parry_Range = 0,
-    spam_Range = 0,  
-    hit_Count = 0,
-
-    hit_Time = tick(),
-    ball_Warping = tick(),
-    is_ball_Warping = false
-}
-
-ReplicatedStorage.Remotes.ParrySuccess.OnClientEvent:Connect(function()
-    if getgenv().hit_sound_Enabled then
-        hit_Sound:Play()
-    end
-
-    if getgenv().hit_effect_Enabled then
-        local hit_effect = game:GetObjects("rbxassetid://17407244385")[1]
-
-        hit_effect.Parent = Nurysium_Util.getBall()
-        hit_effect:Emit(3)
-        
-        task.delay(5, function()
-            hit_effect:Destroy()
-        end)
-
-    end
-end)
-
-ReplicatedStorage.Remotes.ParrySuccessAll.OnClientEvent:Connect(function()
-    aura_table.hit_Count += 1
-
-    task.delay(0.15, function()
-        aura_table.hit_Count -= 1
-    end)
-end)
-
-workspace:WaitForChild("Balls").ChildRemoved:Connect(function(child)
-    aura_table.hit_Count = 0
-    aura_table.is_ball_Warping = false
-    aura_table.is_Spamming = false
-end)
 
 Bladeball:CreateToggle("Auto Parry V4", function resolve_parry_Remote())
 end)
